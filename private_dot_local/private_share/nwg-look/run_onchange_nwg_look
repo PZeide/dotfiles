@@ -1,0 +1,5 @@
+#!/bin/fish
+
+# gsettings {{ include "private_dot_local/private_share/nwg-look/gsettings" | sha256sum }}
+nwg-look -a
+nwg-look -x
