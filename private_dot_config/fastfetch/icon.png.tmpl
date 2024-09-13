@@ -1,0 +1,6 @@
+{{/* Select icon based on host */}}
+{{- if eq .chezmoi.hostname "pc-arch-thibaud" -}}
+{{-   include "private_dot_config/fastfetch/icon_pc.png" -}}
+{{- else if eq .chezmoi.hostname "lap-arch-thibaud" -}}
+{{-   include "private_dot_config/fastfetch/icon_laptop.png" -}}
+{{- end -}}

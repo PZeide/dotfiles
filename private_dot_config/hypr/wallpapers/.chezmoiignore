@@ -1,0 +1,6 @@
+{{/* Only includes directory of wallpapers for the matching host */}}
+{{- if eq .chezmoi.hostname "pc-arch-thibaud" -}}
+kohane
+{{- else if eq .chezmoi.hostname "lap-arch-thibaud" -}}
+nilou
+{{- end -}}

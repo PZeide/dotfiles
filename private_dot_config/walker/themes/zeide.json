@@ -1,0 +1,31 @@
+{
+  "ui": {
+    "anchors": {
+      "top": false,
+      "bottom": false,
+      "left": false,
+      "right": false
+    },
+    "fullscreen": false,
+    "ignore_exclusive": true,
+    "window": {
+      "box": {
+        "h_align": "center",
+        "v_align": "center",
+        "orientation": "vertical",
+        "scroll": {
+          "list": {
+            "max_height": 500,
+            "min_height": 500,
+            "item": {
+              "icon": {
+                "pixel_size": 32
+              }
+            },
+            "always_show": true
+          }
+        }
+      }
+    }
+  }
+}

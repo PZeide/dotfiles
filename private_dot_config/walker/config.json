@@ -1,0 +1,46 @@
+{
+  "activation_mode": {
+    "labels": "&é\"'(-è_ç"
+  },
+  "builtins": {
+    "applications": {
+      "history": true,
+      "show_icon_when_single": true,
+      "show_sub_when_single": true,
+      "weight": 5,
+      "actions": true,
+      "prioritize_new": true
+    },
+    "clipboard": {
+      "switcher_only": true,
+      "image_height": 300
+    },
+    "emojis": {
+      "switcher_only": true
+    },
+    "runner": {
+      "history": true,
+      "weight": 5,
+      "generic_entry": false
+    },
+    "ssh": {
+      "history": true,
+      "switcher_only": true
+    },
+    "switcher": {
+      "prefix": "/"
+    }
+  },
+  "disabled": ["commands", "custom_commands", "dmenu", "finder", "websearch", "windows"],
+  "list": {
+    "max_entries": 30,
+    "show_initial_entries": true,
+    "single_click": true
+  },
+  "search": {
+    "delay": 0,
+    "force_keyboard_focus": true,
+    "placeholder": "Search..."
+  },
+  "theme": "zeide"
+}

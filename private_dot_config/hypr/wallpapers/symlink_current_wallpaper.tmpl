@@ -1,0 +1,6 @@
+{{/* Select wallpaper based on host */}}
+{{- if eq .chezmoi.hostname "pc-arch-thibaud" -}}
+nilou/Nilou.full.4209566.jpg
+{{- else if eq .chezmoi.hostname "lap-arch-thibaud" -}}
+kohane/card_after_training.png
+{{- end -}}
