@@ -1,2 +1,5 @@
 # chezmoi_modify_manager specific files
 **/*.src.ini
+
+# README
+README.md
