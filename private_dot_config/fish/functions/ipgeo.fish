@@ -1,5 +1,5 @@
 function ipgeo -d "Get geo data from current IP address"
-  argparse "h/help" "n/no-cache" -- $argv
+  argparse "h/help" "n/no-cache" "s/silent" -- $argv
 
   if set -q _flag_help
     _ipgeo_help
@@ -27,7 +27,10 @@ function ipgeo -d "Get geo data from current IP address"
     # At this point, cache is either non-existent, expired or flag no-cache is set
     set api_result $(curl -sf --ipv4 https://ipapi.co/json) # On my end, ipv4 is more precise than ipv6 for geo
     if test $status -ne 0 # Check if request failed
-      printf "failed to reach api"
+      if not set -q _flag_s
+        printf "failed to reach api"
+      end
+
       return 1
     end
 
@@ -50,6 +53,7 @@ function _ipgeo_help
     "Options:" \
     "  -h or --help      print this help message" \
     "  -n or --no-cache  disable cache (force remote querying and don't save to cache)" \
+    "  -s or --silent    don't print anything when script fails" \
     "" \
     "Subcommands:" \
     "  city          query city" \
