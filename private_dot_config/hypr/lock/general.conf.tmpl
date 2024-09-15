@@ -101,7 +101,7 @@ label {
 
 label {
   monitor =
-  text = cmd[update:1000] echo -e "$(fish -c "ipgeo country"), $(fish -c "ipgeo city")"
+  text = cmd[update:30000] echo -e "$(fish -c "ipgeo -s country"), $(fish -c "ipgeo -s city")"
   color = rgb(255, 255, 255)
   font_size = 14
   font_family = SF Pro Display Bold
@@ -112,7 +112,7 @@ label {
 
 label {
   monitor =
-  text = cmd[update:1000] echo -e "$(fish -c "weather")"
+  text = cmd[update:30000] echo -e "$(fish -c "weather -s")"
   color = rgb(255, 255, 255)
   font_size = 14
   font_family = SF Pro Display Bold
