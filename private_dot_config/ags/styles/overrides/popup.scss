@@ -1,0 +1,36 @@
+menu {
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px;
+
+  separator {
+    background: $foreground;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    min-height: 1px;
+  }
+
+  menuitem {
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin: 4px 0;
+    transition: background 200ms;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background: rgba($foreground, 0.15);
+    }
+
+    &:active {
+      background: rgba($foreground, 0.25);
+    }
+  }
+}

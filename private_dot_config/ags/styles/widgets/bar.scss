@@ -1,0 +1,66 @@
+.bar-corner {
+  border-radius: 20px;
+  background: rgba($background, 0.2);
+}
+
+.bar {
+  background: rgba($background, 0.3);
+  padding: 4px 6px;
+
+  .element {
+    background: rgba($foreground, 0.25);
+    border-radius: 12px;
+    padding: 4px 6px;
+    margin: 0 3px;
+
+    &.button {
+      transition: background 200ms;
+
+      &:hover {
+        background: rgba($foreground, 0.35);
+      }
+
+      &:active {
+        background: rgba($foreground, 0.45);
+      }
+    }
+  }
+
+  .media-revealer label {
+    font-size: 10.5px;
+    padding-left: 6px;
+  }
+
+  .clock .time {
+    font-weight: bold;
+  }
+
+  .workspaces {
+    label {
+      font-size: 0;
+      min-width: 5pt;
+      min-height: 5pt;
+      border-radius: 6px;
+      margin: 0 3px;
+      transition: 200ms;
+      background-color: rgba($background, 0.3);
+
+      &.occupied {
+        background-color: $foreground;
+        min-width: 6.5pt;
+        min-height: 6.5pt;
+      }
+
+      &.active {
+        // background-color: $color2;
+        background-image: linear-gradient(
+          to right,
+          lighten($color2, 3%),
+          darken($color2, 3%)
+        );
+        min-width: 20pt;
+        min-height: 12pt;
+      }
+    }
+  }
+}

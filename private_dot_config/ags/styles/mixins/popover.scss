@@ -1,0 +1,6 @@
+@mixin popover {
+  background: rgba($background, 0.4);
+  border-radius: 12px;
+  padding: 16px 12px;
+  border: 2px solid $color2;
+}
