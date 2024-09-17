@@ -52,12 +52,7 @@
       }
 
       &.active {
-        // background-color: $color2;
-        background-image: linear-gradient(
-          to right,
-          lighten($color2, 3%),
-          darken($color2, 3%)
-        );
+        background-color: $color2;
         min-width: 20pt;
         min-height: 12pt;
       }
