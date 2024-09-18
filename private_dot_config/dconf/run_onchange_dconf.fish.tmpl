@@ -1,4 +1,4 @@
 #!/bin/fish
 
 # user.ini {{ include "private_dot_config/dconf/user.ini" | sha256sum }}
-dconf load / < {{ joinPath .chezmoi.sourceDir "private_dot_config/dconf/dconf.ini" | quote }}
+dconf load / < {{ joinPath .chezmoi.sourceDir "private_dot_config/dconf/user.ini" | quote }}
