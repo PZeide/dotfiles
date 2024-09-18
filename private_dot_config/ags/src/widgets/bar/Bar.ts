@@ -1,3 +1,4 @@
+import { BatteryBar } from "./elements/BatteryBar";
 import { Clock } from "./elements/Clock";
 import { Media } from "./elements/Media";
 import { PowerButton } from "./elements/PowerButton";
@@ -22,7 +23,7 @@ export function Bar(monitor: number = 0) {
       endWidget: Widget.Box({
         hexpand: true,
         hpack: "end",
-        children: [Media(), PowerButton()],
+        children: [Media(), BatteryBar(), PowerButton()],
       }),
     }),
   });
