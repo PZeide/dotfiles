@@ -2,6 +2,7 @@ set -gx fish_greeting ""
 set -gx EDITOR "nvim"
 set -gx VISUAL "nvim"
 set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
+set -gx DOCKER_HOST "unix://$XDG_RUNTIME_DIR/docker.sock"
 set -gx WALLPAPER_PATH $(readlink -f ~/.config/hypr/wallpapers/current_wallpaper)
 
 alias g="git"
