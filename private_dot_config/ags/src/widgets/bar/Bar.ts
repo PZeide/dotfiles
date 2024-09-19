@@ -4,9 +4,11 @@ import { Media } from "./elements/Media";
 import { PowerButton } from "./elements/PowerButton";
 import { Workspaces } from "./elements/Workspaces";
 
+export const BAR_NAME_PREFIX = "ags_bar_";
+
 export function Bar(monitor: number = 0) {
   return Widget.Window({
-    name: `ags_bar_${monitor}`,
+    name: `${BAR_NAME_PREFIX}${monitor}`,
     monitor: monitor,
     anchor: ["top", "left", "right"],
     exclusivity: "exclusive",
