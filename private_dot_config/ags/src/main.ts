@@ -1,5 +1,4 @@
 import Gdk from "types/@girs/gdk-3.0/gdk-3.0";
-import Gtk from "types/@girs/gtk-3.0/gtk-3.0";
 import { Bar, BAR_NAME_PREFIX } from "./widgets/bar/Bar";
 import {
   BarInsideCornerLeft,
@@ -7,7 +6,6 @@ import {
 } from "./widgets/bar/BarCorner";
 import { PowerMenu } from "./widgets/powermenu/PowerMenu";
 import { range } from "./utils";
-import Window from "types/widgets/window";
 
 const multiMonitorWindows = [Bar, BarInsideCornerLeft, BarInsideCornerRight];
 

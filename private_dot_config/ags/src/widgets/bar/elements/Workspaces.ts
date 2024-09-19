@@ -1,6 +1,4 @@
 import { range } from "src/utils";
-import Gdk from "types/@girs/gdk-3.0/gdk-3.0";
-import Gtk from "types/@girs/gtk-3.0/gtk-3.0";
 
 const hyprland = await Service.import("hyprland");
 
