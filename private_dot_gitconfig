@@ -43,3 +43,22 @@
 
 [pager]
   difftool = true
+
+[alias]
+  a = add
+  aa = add -A
+  b = branch
+  ba = branch -a
+  c = commit -m
+  ca = commit -am
+  pl = pull
+  ps = push
+  co = checkout
+  cob = checkout -b
+  contributors = shortlog -nse
+  d = difftool
+  ds = difftool --staged
+  lg = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
+  remotes = remote -v
+  s = status -sb
+  undo = reset HEAD~1
