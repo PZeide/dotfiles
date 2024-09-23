@@ -15,7 +15,7 @@
   // Theme
   {{ if eq .chezmoi.hostname "pc-arch-thibaud" -}}
   "workbench.colorTheme": "Noctis Minimus",
-  {{ else if eq .chezmoi.hostname "lap-arch-thibaud" }}
+  {{- else if eq .chezmoi.hostname "lap-arch-thibaud" -}}
   "workbench.colorTheme": "SynthWave '84",
   "synthwave84.brightness": 0.35,
   {{- end }}
