@@ -18,11 +18,11 @@ background {
 
 input-field {
   {{/* Show input field only on main monitors of each host */}}
-  {{ if eq .chezmoi.hostname "pc-arch-thibaud" }}
+  {{- if eq .chezmoi.hostname "pc-arch-thibaud" -}}
   monitor = DP-1
-  {{ else if eq .chezmoi.hostname "lap-arch-thibaud" }}
+  {{- else if eq .chezmoi.hostname "lap-arch-thibaud" -}}
   monitor = eDP-1
-  {{ end }}
+  {{- end }}
 
   size = 350, 70
   outline_thickness = 0

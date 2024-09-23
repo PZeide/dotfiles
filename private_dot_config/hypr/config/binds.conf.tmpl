@@ -82,9 +82,7 @@ bindl = , XF86AudioStop, exec, playerctl stop
 # Laptop binds
 # --
 
-{{ if eq .chezmoi.hostname "lap-arch-thibaud" }}
-
+{{ if eq .chezmoi.hostname "lap-arch-thibaud" -}}
 bindel = , XF86MonBrightnessUp, exec, brillo -u 100 -A 2
 bindel = , XF86MonBrightnessDown, exec, brillo -u 100 -U 2
-
-{{ end }}
+{{- end }}
