@@ -11,22 +11,27 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line",
   "window.menuBarVisibility": "hidden",
-  "workbench.colorTheme": "SynthWave '84",
   "workbench.startupEditor": "none",
+  // Theme
+  {{ if eq .chezmoi.hostname "pc-arch-thibaud" -}}
+  "workbench.colorTheme": "Noctis Minimus",
+  {{ else if eq .chezmoi.hostname "lap-arch-thibaud" }}
+  "workbench.colorTheme": "SynthWave '84",
   "synthwave84.brightness": 0.35,
+  {{- end }}
   // Format on save
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "[javascript][typescript][vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   // Git
   "git.autofetch": false,
   "git.showInlineOpenFileAction": false,
   "git.autorefresh": true,
   "git.decorations.enabled": true,
-  "git.openRepositoryInParentFolders": "never",
+  "git.openRepositoryInParentFolders": "never"
 }
