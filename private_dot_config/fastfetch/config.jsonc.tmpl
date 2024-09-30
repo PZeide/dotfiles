@@ -3,7 +3,11 @@
   "logo": {
     "type": "kitty",
     "source": "~/.config/fastfetch/icon.png",
+    {{ if eq .chezmoi.hostname "pc-arch-thibaud" -}}
     "height": 10,
+    {{- else if eq .chezmoi.hostname "lap-arch-thibaud" -}}
+    "height": 12,
+    {{- end }}
     "padding": {
       "right": 2
     }
