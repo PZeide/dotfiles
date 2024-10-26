@@ -106,7 +106,13 @@ animations {
 # --
 
 input {
+  {{ if eq .chezmoi.hostname "pc-arch-thibaud" -}}
+  kb_layout = us
+  kb_variant = intl
+  {{- else if eq .chezmoi.hostname "lap-arch-thibaud" -}}
   kb_layout = fr
+  {{- end}}
+
   numlock_by_default = true
   sensitivity = -0.3
   accel_profile = flat
